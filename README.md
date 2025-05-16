@@ -1,10 +1,34 @@
-- 👋 Hi, I’m @Bhanutejanallamothu
-- 👀 I’m interested in web development
-- 🌱 I’m currently a student
-- 💞️ I’m looking to collaborate on wen development
-- 📫 How to reach me ... nallamothubhanuteja110@gmail.com
+# 👋 Hi there! I'm Bhanuteja Nallamothu
 
-<!---
-Bhanutejanallamothu/Bhanutejanallamothu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### 🚀 Aspiring Web Developer | 💻 Student | 🤝 Open to Collaboration
+
+---
+
+### 👨‍💻 About Me
+- 🎓 I’m currently a student with a strong interest in **web development**
+- 🌐 Passionate about building responsive, user-friendly web applications
+- 🧠 Constantly learning and exploring new technologies in frontend, backend, and API development
+- 🤝 Looking to **collaborate** on exciting web development projects and contribute to open-source
+
+---
+
+### 🔧 Tech Stack
+- **Languages:** HTML, CSS, JavaScript, TypeScript
+- **Frameworks & Libraries:** React.js, Tailwind CSS, Material UI (MUI)
+- **Backend & APIs:** REST API development with Node.js/Express
+- **Tools:** Git, GitHub, VS Code, Figma (UI/UX)
+
+---
+
+### 📫 How to Reach Me
+- 📧 Email: [nallamothubhanuteja110@gmail.com](mailto:nallamothubhanuteja110@gmail.com)
+- 💼 LinkedIn: [https://www.linkedin.com/in/bhanuteja-nallamothu-4b8677315/]
+
+---
+
+### ⚡ Fun Fact
+> I love turning ideas into real, working products on the web — one line of code at a time!
+
+---
+
+Thanks for stopping by! Feel free to check out my repositories and connect with me.
