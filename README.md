@@ -16,7 +16,7 @@
 - **Languages:** HTML, CSS, JavaScript, TypeScript
 - **Frameworks & Libraries:** React.js, Tailwind CSS, Material UI (MUI)
 - **Backend & APIs:** REST API development with Node.js/Express
-- **Tools:** Git, GitHub, VS Code, Figma (UI/UX)
+- **Tools:** Git, GitHub, VS Code, Figma (UI/UX), Postman API, Docker, Kubernetes
 
 ---
 
