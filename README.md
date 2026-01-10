@@ -23,7 +23,7 @@
 ### 📫 How to Reach Me
 - 📧 Email: [nallamothubhanuteja110@gmail.com](mailto:nallamothubhanuteja110@gmail.com)
 - 💼 LinkedIn: [https://www.linkedin.com/in/bhanuteja-nallamothu-4b8677315/]
-- 🧑‍💻Portfolio: [https://portfolio-gmzq.vercel.app/]
+- 🧑‍💻Portfolio: [https://portfolio-bhanu-roan.vercel.app/]
 ---
 
 ### ⚡ Fun Fact
