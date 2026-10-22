@@ -111,46 +111,135 @@ flowchart TD
 
 ## 02 — Software & Full-Stack Development
 
-I develop end-to-end web applications and backend systems with strong architectural rigor, modular abstractions, type safety, and database optimization.
+From user interface engineering to transactional persistence, I architect multi-tier software systems built on type safety, clean separation of concerns, and resilient data contracts across the entire application lifecycle.
 
-### 🛠️ Languages, Frameworks & Databases
+### 01 / Frontend Engineering
+*User interfaces · Responsive layouts · Component architecture · Client-side state · API integration*
+
 <p align="left">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React.js" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/HTML5_%26_CSS3-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5 & CSS3" />
 </p>
 
-### 🚀 Featured Full-Stack Projects
+<div align="center">
 
-#### 1. PulseBoard AI — Real-Time Telemetry & Observability Engine
-*An intelligent, real-time system observability and operational telemetry platform designed for microservice health monitoring and proactive anomaly detection.*
+![Frontend Architecture Flow](assets/frontend-component-tree.svg)
+
+</div>
+
+- **Component-Based UI Architecture**: Building reusable, modular interface hierarchies with React and Next.js, emphasizing clean prop interfaces, composability, and predictable state transitions.
+- **Responsive Layout Design**: Crafting responsive web layouts using Tailwind CSS utility systems that adapt smoothly across mobile, tablet, and desktop form factors.
+- **API & Stream Integration**: Binding user interfaces to backend services using asynchronous fetch lifecycles, RESTful JSON consumption, and real-time Server-Sent Events (SSE) / WebSockets.
+- **Live Data & Analytics Presentation**: Presenting live operational metrics, audio streaming controls, and search filters with intuitive visual feedback and loading states.
+
+---
+
+### 02 / Backend Engineering
+*Business logic · API endpoints · Validation · Authentication · Service integration*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Java_17+-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white" alt="Express.js" />
+</p>
+
+<div align="center">
+
+![Backend Flow](assets/backend-flow.svg)
+
+</div>
+
+- **RESTful API Design & Routing**: Structuring modular controller and router layers across Spring Boot, FastAPI, and Express with standard HTTP verbs, clean route parameters, and consistent JSON payload envelopes.
+- **Request Validation & Error Handling**: Implementing schema validation (Pydantic in FastAPI, Bean Validation in Spring Boot) and centralized error handlers returning normalized error responses.
+- **Asynchronous Processing**: Leveraging non-blocking coroutines in FastAPI for high-throughput metric ingestion and event-driven patterns in Node.js for low-latency request queuing.
+- **Multi-Service Coordination**: Integrating backend services with relational databases, container networks, and external third-party streaming/weather endpoints.
+
+---
+
+### 03 / Database Engineering
+*Relational modeling · Normalization · Indexing · Joins · Query optimization*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MySQL_8.0-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/SQL_Dialects-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+</p>
+
+<div align="center">
+
+![Relational Data Schema](assets/database-er-diagram.svg)
+
+*Illustrative relational schema depicting entity keys, foreign constraints, and indexing patterns.*
+
+</div>
+
+- **Relational Data Modeling & Normalization**: Designing structured third normal form (3NF) schemas with primary key constraints, foreign key cascades, and unique column integrity.
+- **Index Optimization & Query Tuning**: Implementing single-column and composite B-tree indexes on high-frequency filter keys (`user_id`, `service_key`, `recorded_at`) to prevent table scans.
+- **Relational Joins & Data Aggregation**: Writing multi-table joins, grouped aggregations, and filtered queries across relational tables to supply client dashboards efficiently.
+- **Connection Pooling & Lifecycle**: Configuring database connection pools and connection timeouts (HikariCP in Spring Boot, async engine pools in FastAPI/Node) for stable resource utilization.
+
+---
+
+### 04 / Full-Stack Architecture & Integration
+*Frontend + Backend + Database + Container Runtime connected as one cohesive application*
+
+<div align="center">
+
+![Full-Stack Architecture](assets/fullstack-architecture.svg)
+
+</div>
+
+#### Featured Full-Stack Projects
+
+##### 1. PulseBoard AI — Real-Time Telemetry & Observability Engine
+*An intelligent operational telemetry platform monitoring system heartbeats and detecting metric anomalies.*
 
 [![Repository](https://img.shields.io/badge/GitHub-Pulseboard.AI-181717?style=flat-square&logo=github)](https://github.com/Bhanutejanallamothu/Pulseboard.AI)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Async_Backend-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/Bhanutejanallamothu/Pulseboard.AI)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Timeseries-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Bhanutejanallamothu/Pulseboard.AI)
+[![React](https://img.shields.io/badge/React_18-Tailwind_CSS-61DAFB?style=flat-square&logo=react&logoColor=black)](https://github.com/Bhanutejanallamothu/Pulseboard.AI)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/Bhanutejanallamothu/Pulseboard.AI)
 
-- **High-Throughput Ingestion**: Asynchronous FastAPI backend delivering sub-10ms response times for cross-service heartbeat and CPU/RAM/latency telemetry streams.
-- **AI Anomaly Detection**: Integrated statistical variance scoring and Scikit-learn trend models that calculate dynamic threshold deviations and flag anomalies before service degradation.
-- **Dynamic Telemetry Dashboard**: React 18, Vite, and Tailwind CSS client featuring interactive charts and real-time Server-Sent Events (SSE) updates.
+- **Asynchronous Telemetry Ingestion**: Python FastAPI backend accepting high-frequency node heartbeats and hardware telemetry via `/api/telemetry` without blocking incoming requests.
+- **Structured Metric Storage**: PostgreSQL database persistence capturing timeseries records for CPU, memory, and service latency data points.
+- **Anomaly Detection Service**: Pandas and Scikit-learn trend scoring models evaluating telemetry variance to flag threshold deviations.
+- **Live Observability Interface**: React 18 / TypeScript frontend presenting interactive telemetry cards and real-time dashboard updates.
 
-#### 2. KL Radio — Digital Broadcasting & Streaming Platform
-*A high-availability live audio streaming web application built to serve 500+ concurrent listeners during live university broadcasts.*
+##### 2. KL Radio — Campus Live Broadcasting Portal
+*A campus live streaming web platform connecting listeners, student song requests, and studio broadcasters.*
 
 [![Live Website](https://img.shields.io/badge/Live-klradio.in-48DBFB?style=flat-square&logo=googlechrome&logoColor=black)](https://www.klradio.in/)
 [![Repository](https://img.shields.io/badge/GitHub-Klradio-181717?style=flat-square&logo=github)](https://github.com/Bhanutejanallamothu/Klradio)
-[![Next.js](https://img.shields.io/badge/Next.js-Frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://github.com/Bhanutejanallamothu/Klradio)
+[![Next.js](https://img.shields.io/badge/Next.js_15-React-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://github.com/Bhanutejanallamothu/Klradio)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://github.com/Bhanutejanallamothu/Klradio)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Signaling-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/Bhanutejanallamothu/Klradio)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Storage-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/Bhanutejanallamothu/Klradio)
 
-- **Real-Time Communication**: WebSocket-driven audio sync pipelines maintaining low-latency broadcast playback with zero audio stutter across high listener spikes.
-- **Database Architecture**: PostgreSQL relational schema redesign with multi-column indexing, accelerating API response performance under heavy traffic.
-- **High-Availability Deployment**: Production deployment on Vercel and Render with live performance monitoring, achieving 99.9% uptime across 50+ live shows.
+- **Reactive Web Player**: Next.js 15 and Tailwind CSS client providing real-time audio playback controls, show schedule timetables, and student song request forms.
+- **Request Queue Service**: Express.js REST API facilitating student song submissions, RJ studio moderation workflows, and request upvoting.
+- **Audio Signaling Microservice**: FastAPI service coordinating low-latency WebRTC streaming audio sessions for live broadcasts.
+- **Relational Data Management**: PostgreSQL database managing relational tables for scheduled programs, broadcast archives, and verified student requests.
+
+##### 3. CI/CD News Platform — Multi-Tier Aggregator
+*An enterprise multi-container news and weather aggregation portal demonstrating layered service integration.*
+
+[![Repository](https://img.shields.io/badge/GitHub-cicd--news-181717?style=flat-square&logo=github)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![React](https://img.shields.io/badge/React-Vite-61DAFB?style=flat-square&logo=react&logoColor=black)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-Java_17-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![MySQL](https://img.shields.io/badge/MySQL_8-Relational-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
+
+- **Client Aggregation Interface**: React (Vite) frontend rendering live category news feeds from NewsData.io alongside localized weather telemetry from OpenWeather API.
+- **Enterprise Spring Boot Backend**: Java 17 service managing user authentication endpoints and personal article bookmarking logic.
+- **Containerized Database**: MySQL 8.0 relational persistence layer with isolated container networking and persistent storage volumes.
+- **Coordinated Kubernetes Deployment**: Exposed via NodePort services with unified Ingress path routing for client and backend services.
 
 ---
 

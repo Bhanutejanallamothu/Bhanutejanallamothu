@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="fsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+
+    <!-- Layer Accents -->
+    <linearGradient id="feGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="beGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="intGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="fsGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.5"/>
+      <circle cx="20" cy="20" r="0.7" fill="#334155" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    @keyframes flowRight {
+      to { stroke-dashoffset: -20; }
+    }
+    .flow-req {
+      stroke-dasharray: 6 4;
+      animation: flowRight 1.6s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="880" height="230" rx="10" fill="url(#fsBg)" stroke="#30363d" stroke-width="1.2" />
+  <rect width="880" height="230" rx="10" fill="url(#fsGrid)" />
+
+  <!-- Top Title Bar -->
+  <rect x="0" y="0" width="880" height="34" rx="10" fill="#161b22" opacity="0.9" />
+  <line x1="0" y1="34" x2="880" y2="34" stroke="#30363d" stroke-width="1" />
+
+  <!-- Window dots -->
+  <circle cx="18" cy="17" r="4" fill="#f87171" opacity="0.8" />
+  <circle cx="32" cy="17" r="4" fill="#fbbf24" opacity="0.8" />
+  <circle cx="46" cy="17" r="4" fill="#4ade80" opacity="0.8" />
+
+  <text x="68" y="21" fill="#94a3b8" font-size="10.5" class="mono">architecture://fullstack-integration/end-to-end-dataflow</text>
+  
+  <rect x="660" y="8" width="205" height="18" rx="9" fill="#1e1b4b" stroke="#a855f7" stroke-width="0.8" />
+  <circle cx="672" cy="17" r="3.5" fill="#c084fc" />
+  <text x="683" y="21" fill="#e9d5ff" font-size="9" font-weight="600" class="mono">FOUR-TIER INTEGRATION</text>
+
+  <!-- ==================== FLOW ARROWS ==================== -->
+  <!-- Frontend to API Gateway -->
+  <line x1="240" y1="120" x2="310" y2="120" stroke="#38bdf8" stroke-width="2" class="flow-req" />
+  <polygon points="312,120 304,116 304,124" fill="#38bdf8" />
+  <text x="250" y="110" fill="#38bdf8" font-size="8" class="mono">HTTP/JSON</text>
+  <text x="250" y="138" fill="#64748b" font-size="8" class="mono">REST / WS</text>
+
+  <!-- API Gateway to Backend Services -->
+  <line x1="400" y1="120" x2="470" y2="120" stroke="#a855f7" stroke-width="2" class="flow-req" />
+  <polygon points="472,120 464,116 464,124" fill="#a855f7" />
+  <text x="410" y="110" fill="#c084fc" font-size="8" class="mono">ROUTE</text>
+  <text x="410" y="138" fill="#64748b" font-size="8" class="mono">DISPATCH</text>
+
+  <!-- Backend to Database -->
+  <line x1="640" y1="120" x2="700" y2="120" stroke="#4ade80" stroke-width="2" class="flow-req" />
+  <polygon points="702,120 694,116 694,124" fill="#4ade80" />
+  <text x="648" y="110" fill="#4ade80" font-size="8" class="mono">JDBC/SQL</text>
+  <text x="648" y="138" fill="#fbbf24" font-size="8" class="mono">QUERY</text>
+
+  <!-- ==================== LAYER 1: FRONTEND ==================== -->
+  <g transform="translate(25, 52)">
+    <rect width="215" height="155" rx="8" fill="#0d1117" stroke="#0284c7" stroke-width="1.2" opacity="0.95" />
+    <rect width="215" height="26" rx="8" fill="#0c4a6e" opacity="0.4" />
+    <text x="12" y="17" fill="#38bdf8" font-size="10.5" font-weight="700" class="mono">01 · FRONTEND LAYER</text>
+
+    <!-- Inner Cards -->
+    <rect x="12" y="36" width="191" height="24" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <text x="22" y="52" fill="#f8fafc" font-size="9.5" font-weight="600" class="sans">React.js · Next.js · TypeScript</text>
+
+    <rect x="12" y="66" width="191" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="0.8" />
+    <text x="22" y="82" fill="#94a3b8" font-size="9" class="mono">Tailwind CSS · Component State</text>
+
+    <rect x="12" y="96" width="191" height="24" rx="4" fill="#0f172a" stroke="#334155" stroke-width="0.8" />
+    <text x="22" y="112" fill="#94a3b8" font-size="9" class="mono">Live Telemetry &amp; Audio Stream UI</text>
+
+    <rect x="12" y="126" width="95" height="16" rx="3" fill="#0369a1" />
+    <text x="18" y="138" fill="#e0f2fe" font-size="8.5" class="mono">CLIENT RENDER</text>
+  </g>
+
+  <!-- ==================== LAYER 2: API & CONTRACTS ==================== -->
+  <g transform="translate(310, 52)">
+    <rect width="90" height="155" rx="8" fill="#0d1117" stroke="#9333ea" stroke-width="1.2" opacity="0.95" />
+    <rect width="90" height="26" rx="8" fill="#3b0764" opacity="0.4" />
+    <text x="10" y="17" fill="#c084fc" font-size="9.5" font-weight="700" class="mono">CONTRACTS</text>
+
+    <rect x="8" y="38" width="74" height="20" rx="3" fill="#1e1b4b" />
+    <text x="14" y="52" fill="#e9d5ff" font-size="8.5" class="mono">REST APIs</text>
+
+    <rect x="8" y="64" width="74" height="20" rx="3" fill="#1e1b4b" />
+    <text x="14" y="78" fill="#e9d5ff" font-size="8.5" class="mono">JSON DTOs</text>
+
+    <rect x="8" y="90" width="74" height="20" rx="3" fill="#1e1b4b" />
+    <text x="14" y="104" fill="#e9d5ff" font-size="8.5" class="mono">WebSockets</text>
+
+    <rect x="8" y="116" width="74" height="20" rx="3" fill="#1e1b4b" />
+    <text x="14" y="130" fill="#e9d5ff" font-size="8.5" class="mono">Validation</text>
+  </g>
+
+  <!-- ==================== LAYER 3: BACKEND SERVICES ==================== -->
+  <g transform="translate(470, 52)">
+    <rect width="170" height="155" rx="8" fill="#0d1117" stroke="#16a34a" stroke-width="1.2" opacity="0.95" />
+    <rect width="170" height="26" rx="8" fill="#14532d" opacity="0.4" />
+    <text x="12" y="17" fill="#4ade80" font-size="10.5" font-weight="700" class="mono">02 · BACKEND LAYER</text>
+
+    <!-- Services -->
+    <rect x="10" y="36" width="150" height="24" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <circle cx="20" cy="48" r="3" fill="#22c55e" />
+    <text x="28" y="52" fill="#f8fafc" font-size="9" font-weight="600" class="sans">Spring Boot 3 (Java 17)</text>
+
+    <rect x="10" y="66" width="150" height="24" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <circle cx="20" cy="78" r="3" fill="#22c55e" />
+    <text x="28" y="82" fill="#f8fafc" font-size="9" font-weight="600" class="sans">FastAPI (Python 3.10+)</text>
+
+    <rect x="10" y="96" width="150" height="24" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <circle cx="20" cy="108" r="3" fill="#22c55e" />
+    <text x="28" y="112" fill="#f8fafc" font-size="9" font-weight="600" class="sans">Node.js · Express.js</text>
+
+    <rect x="10" y="126" width="90" height="16" rx="3" fill="#15803d" />
+    <text x="16" y="138" fill="#dcfce7" font-size="8.5" class="mono">BUSINESS LOGIC</text>
+  </g>
+
+  <!-- ==================== LAYER 4: DATABASE & STORAGE ==================== -->
+  <g transform="translate(700, 52)">
+    <rect width="155" height="155" rx="8" fill="#0d1117" stroke="#d97706" stroke-width="1.2" opacity="0.95" />
+    <rect width="155" height="26" rx="8" fill="#78350f" opacity="0.4" />
+    <text x="10" y="17" fill="#fbbf24" font-size="10.5" font-weight="700" class="mono">03 · DATA LAYER</text>
+
+    <!-- Database Nodes -->
+    <rect x="10" y="36" width="135" height="26" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <text x="18" y="52" fill="#f8fafc" font-size="9.5" font-weight="600" class="sans">PostgreSQL</text>
+    <text x="82" y="52" fill="#94a3b8" font-size="8.5" class="mono">:5432</text>
+
+    <rect x="10" y="68" width="135" height="26" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.8" />
+    <text x="18" y="84" fill="#f8fafc" font-size="9.5" font-weight="600" class="sans">MySQL 8.0</text>
+    <text x="82" y="84" fill="#94a3b8" font-size="8.5" class="mono">:3306</text>
+
+    <rect x="10" y="100" width="135" height="20" rx="3" fill="#0f172a" />
+    <text x="16" y="114" fill="#94a3b8" font-size="8.5" class="mono">ER Modeling · 3NF</text>
+
+    <rect x="10" y="126" width="95" height="16" rx="3" fill="#b45309" />
+    <text x="16" y="138" fill="#fef3c7" font-size="8.5" class="mono">INDEXED QUERIES</text>
+  </g>
+</svg>
