@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="agentBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    @keyframes agentFlow {
+      to { stroke-dashoffset: -16; }
+    }
+    .flow-agent {
+      stroke-dasharray: 5 3;
+      animation: agentFlow 1.6s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="880" height="110" rx="8" fill="url(#agentBg)" stroke="#30363d" stroke-width="1" />
+
+  <!-- Flow Lines -->
+  <line x1="135" y1="55" x2="165" y2="55" stroke="#38bdf8" stroke-width="1.8" class="flow-agent" />
+  <polygon points="167,55 159,51 159,59" fill="#38bdf8" />
+
+  <line x1="285" y1="55" x2="315" y2="55" stroke="#c084fc" stroke-width="1.8" class="flow-agent" />
+  <polygon points="317,55 309,51 309,59" fill="#c084fc" />
+
+  <line x1="435" y1="55" x2="465" y2="55" stroke="#c084fc" stroke-width="1.8" class="flow-agent" />
+  <polygon points="467,55 459,51 459,59" fill="#c084fc" />
+
+  <line x1="585" y1="55" x2="615" y2="55" stroke="#38bdf8" stroke-width="1.8" class="flow-agent" />
+  <polygon points="617,55 609,51 609,59" fill="#38bdf8" />
+
+  <line x1="735" y1="55" x2="765" y2="55" stroke="#4ade80" stroke-width="1.8" class="flow-agent" />
+  <polygon points="767,55 759,51 759,59" fill="#4ade80" />
+
+  <!-- Stage 1: User Goal -->
+  <g transform="translate(18, 18)">
+    <rect width="117" height="74" rx="6" fill="#0d1117" stroke="#0284c7" stroke-width="1" />
+    <rect width="117" height="18" rx="6" fill="#0c4a6e" opacity="0.4" />
+    <text x="8" y="13" fill="#38bdf8" font-size="8.5" font-weight="700" class="mono">01 · USER GOAL</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">Prompt / Task</text>
+    <text x="8" y="54" fill="#94a3b8" font-size="8" class="mono">Structured Intent</text>
+  </g>
+
+  <!-- Stage 2: Reasoning & LLM -->
+  <g transform="translate(168, 18)">
+    <rect width="117" height="74" rx="6" fill="#0d1117" stroke="#9333ea" stroke-width="1" />
+    <rect width="117" height="18" rx="6" fill="#3b0764" opacity="0.4" />
+    <text x="8" y="13" fill="#c084fc" font-size="8.5" font-weight="700" class="mono">02 · REASONING</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">LLM Planning</text>
+    <text x="8" y="54" fill="#94a3b8" font-size="8" class="mono">Task Decomposition</text>
+  </g>
+
+  <!-- Stage 3: Tool Selection -->
+  <g transform="translate(318, 18)">
+    <rect width="117" height="74" rx="6" fill="#0d1117" stroke="#9333ea" stroke-width="1" />
+    <rect width="117" height="18" rx="6" fill="#3b0764" opacity="0.4" />
+    <text x="8" y="13" fill="#c084fc" font-size="8.5" font-weight="700" class="mono">03 · TOOL CALL</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">Function Schema</text>
+    <text x="8" y="54" fill="#94a3b8" font-size="8" class="mono">RAG / API Query</text>
+  </g>
+
+  <!-- Stage 4: Execution -->
+  <g transform="translate(468, 18)">
+    <rect width="117" height="74" rx="6" fill="#0d1117" stroke="#0284c7" stroke-width="1" />
+    <rect width="117" height="18" rx="6" fill="#0c4a6e" opacity="0.4" />
+    <text x="8" y="13" fill="#38bdf8" font-size="8.5" font-weight="700" class="mono">04 · EXECUTION</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">Action Run</text>
+    <text x="8" y="54" fill="#94a3b8" font-size="8" class="mono">Service / DB Call</text>
+  </g>
+
+  <!-- Stage 5: Evaluation -->
+  <g transform="translate(618, 18)">
+    <rect width="117" height="74" rx="6" fill="#0d1117" stroke="#0284c7" stroke-width="1" />
+    <rect width="117" height="18" rx="6" fill="#0c4a6e" opacity="0.4" />
+    <text x="8" y="13" fill="#38bdf8" font-size="8.5" font-weight="700" class="mono">05 · EVALUATION</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">Validation</text>
+    <text x="8" y="54" fill="#94a3b8" font-size="8" class="mono">Output Check</text>
+  </g>
+
+  <!-- Stage 6: Final Response -->
+  <g transform="translate(768, 18)">
+    <rect width="98" height="74" rx="6" fill="#0d1117" stroke="#16a34a" stroke-width="1" />
+    <rect width="98" height="18" rx="6" fill="#14532d" opacity="0.4" />
+    <text x="8" y="13" fill="#4ade80" font-size="8.5" font-weight="700" class="mono">06 · OUTPUT</text>
+    <text x="8" y="38" fill="#f8fafc" font-size="10.5" font-weight="600" class="sans">Final Answer</text>
+    <text x="8" y="54" fill="#86efac" font-size="8" class="mono">Verified Result</text>
+  </g>
+</svg>

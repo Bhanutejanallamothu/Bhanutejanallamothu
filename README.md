@@ -243,37 +243,110 @@ From user interface engineering to transactional persistence, I architect multi-
 
 ---
 
-## 03 — Artificial Intelligence & Machine Learning
+## 03 — AI & Machine Learning
 
-I specialize in applying computer vision, surrogate modeling, and dataset engineering to solve real-world engineering problems and deliver production-grade ML inference APIs.
+*Intelligent agents · Neural networks · Computer vision · Applied data engineering*
 
-### 🛠️ AI/ML Toolset & Libraries
+From autonomous agent reasoning workflows to deep neural network representations, computer vision object detection, and multimodal data preprocessing, I explore applied artificial intelligence and production model integration.
+
+### 01 / AI Agents & Intelligent Automation
+*Reasoning workflows · Tool calling · Task orchestration · Multi-step automation*
+
 <p align="left">
-  <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-0052CC?style=for-the-badge&logo=yolo&logoColor=white" alt="YOLOv8" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
-  <img src="https://img.shields.io/badge/XGBoost-1890FF?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Python_3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/LLM_APIs-Reasoning-8A2BE2?style=flat-square&logo=openai&logoColor=white" alt="LLM APIs" />
+  <img src="https://img.shields.io/badge/Tool_Calling-Function_Execution-0052CC?style=flat-square&logo=fastapi&logoColor=white" alt="Tool Calling" />
+  <img src="https://img.shields.io/badge/RAG-Context_Retrieval-06B6D4?style=flat-square&logo=databricks&logoColor=white" alt="RAG" />
+  <img src="https://img.shields.io/badge/JSON_Schema-Validation-323330?style=flat-square&logo=json&logoColor=white" alt="JSON Schema" />
 </p>
 
-### 🚀 Featured Project: AutoTune.ai — Vehicle Intelligence Microservice
-*A high-performance vehicle intelligence and zero-trust ML microservice pairing deep learning computer vision with predictive calibration optimization.*
+<div align="center">
+
+![AI Agent Flow](assets/ai-agent-flow.svg)
+
+</div>
+
+- **Agentic Reasoning Lifecycles**: Designing goal-driven agent workflows that take structured user objectives, break down complex requirements into discrete subtasks, and dynamically evaluate intermediate step outputs.
+- **Tool Calling & Function Execution**: Implementing structured JSON function schemas enabling language models to invoke local microservices, database operations, and external web APIs deterministically.
+- **Retrieval-Augmented Generation (RAG)**: Augmenting model context windows with indexed domain knowledge to ground generation in factual references and mitigate hallucinations.
+- **Multi-Step Task Orchestration**: Structuring multi-turn diagnostic sessions where intermediate model outputs feed directly into subsequent validation and execution phases.
+
+---
+
+### 02 / Neural Networks & Deep Learning
+*Deep learning concepts · Model training & evaluation · Inference pipelines · Model integration*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
+  <img src="https://img.shields.io/badge/FastAPI-Inference_Serving-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI Serving" />
+</p>
+
+<div align="center">
+
+![Neural Network Diagram](assets/neural-network-diagram.svg)
+
+</div>
+
+- **Layered Representation & Feedforward Networks**: Constructing neural architectures with parameterized weight tensors, bias vectors, and nonlinear activation functions ($\text{ReLU}$, $\text{GELU}$, $\text{Sigmoid}$) for feature extraction.
+- **Optimization & Loss Minimization**: Applying backpropagation algorithms, gradient descent optimizers (Adam, SGD), and task-specific loss functions to minimize empirical loss during training cycles.
+- **Model Evaluation & Generalization**: Assessing model checkpoints using precision, recall, F1 metrics, and validation curves across held-out test splits.
+- **Backend Model Serving**: Wrapping trained model weights in lightweight Python inference routines served behind FastAPI endpoints for real-time predictions.
+
+---
+
+### 03 / Computer Vision
+*Object detection · Bounding boxes · Image localization · Model inference through APIs*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-0052CC?style=flat-square&logo=yolo&logoColor=white" alt="YOLOv8" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/NumPy-Tensors-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Docker-Inference_Container-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+</p>
+
+<div align="center">
+
+![Computer Vision Pipeline](assets/computer-vision-pipeline.svg)
+
+*Illustrative vehicle component localization pipeline showing OpenCV preprocessing, YOLOv8 feature extraction, and bounding box coordinates.*
+
+</div>
+
+- **Object Detection & Feature Localization**: Deploying YOLOv8 convolutional backbones and feature pyramid detection heads for multi-class visual component identification and bounding box regression.
+- **Image Normalization & Transformation**: Utilizing OpenCV to standardize raw camera payloads—resizing to $640 \times 640$, converting color channels, and structuring tensor arrays.
+- **Inference API Integration**: Serving visual detection models behind RESTful endpoints (`/identify-part`) returning normalized coordinates, class labels, and confidence thresholds.
+
+#### Featured AI Project: AutoTune.ai
+*An image-based vehicle component identification application using YOLOv8, integrated with a FastAPI backend and containerized via Docker.*
 
 [![Repository](https://img.shields.io/badge/GitHub-AutoTuning.AI-181717?style=flat-square&logo=github)](https://github.com/Bhanutejanallamothu/auto)
-[![YOLOv8](https://img.shields.io/badge/YOLOv8-Computer_Vision-0052CC?style=flat-square&logo=yolo&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
-[![XGBoost](https://img.shields.io/badge/XGBoost-Surrogate_Model-1890FF?style=flat-square&logo=xgboost&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Object_Detection-0052CC?style=flat-square&logo=yolo&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Image_Processing-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Model_API-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/Bhanutejanallamothu/auto)
 
-- **Computer Vision Part Identification**: Custom-trained YOLOv8 inference endpoint (`/identify-part`) providing real-time visual part localization and multi-class classification.
-- **Surrogate Engine Optimization**: Machine learning surrogate model trained with XGBoost (`/ecu/score`) that evaluates engine calibration states and proposes bounded adjustment deltas (`/ecu/recommend`).
-- **Automated Root-Cause Diagnostics**: Failure reasoning engine (`/diagnose`) coordinating telemetry triage with automated diagnostic handoffs.
-- **Production Hardening**: Enclosed in hardened non-root container images with startup, liveness, and readiness probes alongside Prometheus latency instrumentation (`/metrics`).
+- **Vision Inference Endpoint**: Custom-trained YOLOv8 inference service (`/identify-part`) identifying visual automotive components from uploaded camera feeds.
+- **Image Pipeline**: Preprocesses incoming camera payloads using OpenCV and NumPy into normalized $(1, 3, 640, 640)$ tensors for model evaluation.
+- **Containerized Model Serving**: Packaged in a hardened Docker container exposing REST inference endpoints with structured JSON detection payloads.
 
-### 🔬 Applied AI, Audio Processing & Dataset Preparation
-- **Swecha Open-Source AI Initiative**: Curated, preprocessed, and tokenized large-scale Telugu language text corpora, fine-tuning NLP models and achieving a **10% increase in model accuracy**.
-- **Audio Signal Processing**: Implemented audio analysis pipelines utilizing STFT and spectral domain representations for broadcast signal monitoring and acoustic anomaly profiling.
-- **Vision Recognition Systems**: Designed and evaluated custom object detection models for sign detection and visual tracking pipelines.
+---
+
+### 04 / Applied AI, Dataset Engineering & Audio Processing
+*Dataset cleaning · Audio preprocessing · Validation · Training-data preparation*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Audio_Processing-Librosa-E65100?style=flat-square&logo=python&logoColor=white" alt="Audio Processing" />
+</p>
+
+- **Telugu Language Dataset Engineering (Swecha)**: Curated, preprocessed, and validated large-scale Telugu text corpora—performing text normalization, deduplication, and tokenization to prepare clean training data for regional language NLP fine-tuning.
+- **Audio Conversion & Normalization ([AweTales](https://github.com/Bhanutejanallamothu/AweTales))**: Designed automated audio preprocessing scripts using FFmpeg and Python—handling batch format conversions, sample rate standardization, silence removal, and acoustic amplitude normalization for voice narrative workflows.
+- **Data Validation & Quality Assurance**: Engineered robust data preprocessing routines with Pandas to handle missing values, validate schema constraints, and format tabular/time-series records prior to downstream model ingestion.
 
 ---
 

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .synapse { stroke: #334155; stroke-width: 0.8; opacity: 0.45; }
+  </style>
+
+  <rect width="880" height="140" rx="8" fill="url(#nnBg)" stroke="#30363d" stroke-width="1" />
+
+  <!-- Left: Architectural Label -->
+  <g transform="translate(25, 20)">
+    <text x="0" y="16" fill="#c084fc" font-size="10" font-weight="700" class="mono">DEEP NEURAL ARCHITECTURE</text>
+    <text x="0" y="36" fill="#f8fafc" font-size="12" font-weight="600" class="sans">Feedforward &amp; Representation</text>
+    <text x="0" y="54" fill="#94a3b8" font-size="9" class="mono">Layer Mapping: x ──► h₁ ──► h₂ ──► ŷ</text>
+    <rect x="0" y="70" width="145" height="18" rx="3" fill="#1e1b4b" stroke="#a855f7" stroke-width="0.8" />
+    <text x="8" y="82" fill="#e9d5ff" font-size="8.5" class="mono">ACTIVATION: σ(Wᵀx + b)</text>
+    <text x="0" y="105" fill="#64748b" font-size="8.5" class="mono">Gradient descent · Loss: ℒ(θ)</text>
+  </g>
+
+  <!-- Right: Neural Network Graph Representation -->
+  <g transform="translate(360, 15)">
+    <!-- Synaptic Lines connecting Input to H1 -->
+    <!-- Input Y: 20, 44, 68, 92 -->
+    <!-- H1 Y: 12, 32, 52, 72, 92, 112 -->
+    <!-- H2 Y: 22, 47, 72, 97 -->
+    <!-- Out Y: 45, 75 -->
+    
+    <!-- Input to H1 -->
+    <line x1="40" y1="20" x2="160" y2="12" class="synapse" />
+    <line x1="40" y1="20" x2="160" y2="32" class="synapse" />
+    <line x1="40" y1="20" x2="160" y2="52" class="synapse" />
+    <line x1="40" y1="44" x2="160" y2="32" class="synapse" />
+    <line x1="40" y1="44" x2="160" y2="52" class="synapse" />
+    <line x1="40" y1="44" x2="160" y2="72" class="synapse" />
+    <line x1="40" y1="68" x2="160" y2="52" class="synapse" />
+    <line x1="40" y1="68" x2="160" y2="72" class="synapse" />
+    <line x1="40" y1="68" x2="160" y2="92" class="synapse" />
+    <line x1="40" y1="92" x2="160" y2="72" class="synapse" />
+    <line x1="40" y1="92" x2="160" y2="92" class="synapse" />
+    <line x1="40" y1="92" x2="160" y2="112" class="synapse" />
+
+    <!-- H1 to H2 -->
+    <line x1="160" y1="12" x2="280" y2="22" class="synapse" />
+    <line x1="160" y1="32" x2="280" y2="22" class="synapse" />
+    <line x1="160" y1="32" x2="280" y2="47" class="synapse" />
+    <line x1="160" y1="52" x2="280" y2="47" class="synapse" />
+    <line x1="160" y1="52" x2="280" y2="72" class="synapse" />
+    <line x1="160" y1="72" x2="280" y2="47" class="synapse" />
+    <line x1="160" y1="72" x2="280" y2="72" class="synapse" />
+    <line x1="160" y1="72" x2="280" y2="97" class="synapse" />
+    <line x1="160" y1="92" x2="280" y2="72" class="synapse" />
+    <line x1="160" y1="92" x2="280" y2="97" class="synapse" />
+    <line x1="160" y1="112" x2="280" y2="97" class="synapse" />
+
+    <!-- H2 to Output -->
+    <line x1="280" y1="22" x2="400" y2="45" class="synapse" stroke="#38bdf8" />
+    <line x1="280" y1="47" x2="400" y2="45" class="synapse" />
+    <line x1="280" y1="47" x2="400" y2="75" class="synapse" />
+    <line x1="280" y1="72" x2="400" y2="45" class="synapse" />
+    <line x1="280" y1="72" x2="400" y2="75" class="synapse" />
+    <line x1="280" y1="97" x2="400" y2="75" class="synapse" stroke="#4ade80" />
+
+    <!-- Input Nodes (x) -->
+    <circle cx="40" cy="20" r="7" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="40" cy="44" r="7" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="40" cy="68" r="7" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="40" cy="92" r="7" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="22" y="118" fill="#38bdf8" font-size="8.5" font-weight="600" class="mono">INPUT x</text>
+
+    <!-- Hidden Layer 1 Nodes (h1) -->
+    <circle cx="160" cy="12" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="160" cy="32" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="160" cy="52" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="160" cy="72" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="160" cy="92" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="160" cy="112" r="6" fill="#3b0764" stroke="#a855f7" stroke-width="1.5" />
+    <text x="145" y="128" fill="#c084fc" font-size="8.5" class="mono">HIDDEN h₁</text>
+
+    <!-- Hidden Layer 2 Nodes (h2) -->
+    <circle cx="280" cy="22" r="6" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" />
+    <circle cx="280" cy="47" r="6" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" />
+    <circle cx="280" cy="72" r="6" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" />
+    <circle cx="280" cy="97" r="6" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" />
+    <text x="265" y="128" fill="#c084fc" font-size="8.5" class="mono">HIDDEN h₂</text>
+
+    <!-- Output Nodes (y) -->
+    <circle cx="400" cy="45" r="7" fill="#14532d" stroke="#4ade80" stroke-width="1.5" />
+    <circle cx="400" cy="75" r="7" fill="#14532d" stroke="#4ade80" stroke-width="1.5" />
+    <text x="382" y="108" fill="#4ade80" font-size="8.5" font-weight="600" class="mono">OUTPUT ŷ</text>
+  </g>
+</svg>
