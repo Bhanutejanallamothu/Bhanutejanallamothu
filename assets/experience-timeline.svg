@@ -44,7 +44,7 @@
     <text x="250" y="15" text-anchor="end" fill="#7dd3fc" font-size="8.5" class="mono">Aug 2024 – Present</text>
     <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">Technical Lead</text>
     <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Live streaming architecture, technical</text>
-    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">coordination & broadcast operations</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">coordination &amp; broadcast operations</text>
     <rect x="12" y="82" width="52" height="13" rx="2" fill="#161b22" stroke="#38bdf8" stroke-width="0.5" />
     <text x="38" y="91.5" text-anchor="middle" fill="#38bdf8" font-size="7.5" font-weight="600" class="mono">WebRTC</text>
     <rect x="68" y="82" width="60" height="13" rx="2" fill="#161b22" stroke="#38bdf8" stroke-width="0.5" />
@@ -62,7 +62,7 @@
     <text x="250" y="15" text-anchor="end" fill="#86efac" font-size="8.5" class="mono">Jun 2025 – Jul 2025</text>
     <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">Technology Intern</text>
     <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Telugu NLP corpus data cleaning,</text>
-    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">validation & open-source workflows</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">validation &amp; open-source workflows</text>
     <rect x="12" y="82" width="48" height="13" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="0.5" />
     <text x="36" y="91.5" text-anchor="middle" fill="#4ade80" font-size="7.5" font-weight="600" class="mono">Python</text>
     <rect x="64" y="82" width="58" height="13" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="0.5" />
@@ -80,7 +80,7 @@
     <text x="250" y="15" text-anchor="end" fill="#fde68a" font-size="8.5" class="mono">Jun 2026 – Present</text>
     <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">AI / ML Intern</text>
     <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Audio preprocessing pipelines,</text>
-    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">FFmpeg automation & data validation</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">FFmpeg automation &amp; data validation</text>
     <rect x="12" y="82" width="48" height="13" rx="2" fill="#161b22" stroke="#f59e0b" stroke-width="0.5" />
     <text x="36" y="91.5" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-weight="600" class="mono">Python</text>
     <rect x="64" y="82" width="50" height="13" rx="2" fill="#161b22" stroke="#f59e0b" stroke-width="0.5" />
