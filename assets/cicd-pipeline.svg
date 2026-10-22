@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 125" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <filter id="glow-pip" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    /* Subtle SVG CSS dash animation (supported by SVG renderers including GitHub) */
+    @keyframes dashflow {
+      to {
+        stroke-dashoffset: -20;
+      }
+    }
+    .flow-line {
+      stroke-dasharray: 6 4;
+      animation: dashflow 1.5s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="880" height="125" rx="8" fill="url(#pipeBg)" stroke="#30363d" stroke-width="1" />
+
+  <!-- Flow Lines Between Stages -->
+  <line x1="145" y1="62" x2="185" y2="62" stroke="#f97316" stroke-width="2" class="flow-line" />
+  <polygon points="187,62 179,58 179,66" fill="#f97316" />
+
+  <line x1="315" y1="62" x2="355" y2="62" stroke="#38bdf8" stroke-width="2" class="flow-line" />
+  <polygon points="357,62 349,58 349,66" fill="#38bdf8" />
+
+  <line x1="495" y1="62" x2="535" y2="62" stroke="#38bdf8" stroke-width="2" class="flow-line" />
+  <polygon points="537,62 529,58 529,66" fill="#38bdf8" />
+
+  <line x1="665" y1="62" x2="705" y2="62" stroke="#22c55e" stroke-width="2" class="flow-line" />
+  <polygon points="707,62 699,58 699,66" fill="#22c55e" />
+
+  <!-- STAGE 1: Git Push -->
+  <g transform="translate(20, 20)">
+    <rect width="125" height="85" rx="6" fill="#0d1117" stroke="#ea580c" stroke-width="1" />
+    <rect width="125" height="20" rx="6" fill="#431407" />
+    <text x="10" y="14" fill="#fb923c" font-size="9" font-weight="700" class="mono">STAGE 01</text>
+    
+    <text x="10" y="42" fill="#f8fafc" font-size="11" font-weight="600" class="sans">Git Push</text>
+    <text x="10" y="58" fill="#94a3b8" font-size="9" class="mono">Branch: main</text>
+    <rect x="10" y="66" width="65" height="13" rx="2" fill="#292524" />
+    <text x="14" y="75" fill="#fdba74" font-size="8" class="mono">WEBHOOK</text>
+  </g>
+
+  <!-- STAGE 2: Jenkins Pipeline -->
+  <g transform="translate(190, 20)">
+    <rect width="125" height="85" rx="6" fill="#0d1117" stroke="#0284c7" stroke-width="1" />
+    <rect width="125" height="20" rx="6" fill="#082f49" />
+    <text x="10" y="14" fill="#38bdf8" font-size="9" font-weight="700" class="mono">STAGE 02</text>
+    
+    <text x="10" y="42" fill="#f8fafc" font-size="11" font-weight="600" class="sans">Jenkins CI</text>
+    <text x="10" y="58" fill="#94a3b8" font-size="9" class="mono">Declarative Flow</text>
+    <rect x="10" y="66" width="60" height="13" rx="2" fill="#0c4a6e" />
+    <text x="14" y="75" fill="#7dd3fc" font-size="8" class="mono">TRIGGERED</text>
+  </g>
+
+  <!-- STAGE 3: Build & Tests -->
+  <g transform="translate(360, 20)">
+    <rect width="135" height="85" rx="6" fill="#0d1117" stroke="#0284c7" stroke-width="1" />
+    <rect width="135" height="20" rx="6" fill="#082f49" />
+    <text x="10" y="14" fill="#38bdf8" font-size="9" font-weight="700" class="mono">STAGE 03</text>
+    
+    <text x="10" y="42" fill="#f8fafc" font-size="11" font-weight="600" class="sans">Build &amp; Package</text>
+    <text x="10" y="58" fill="#94a3b8" font-size="9" class="mono">mvn clean package</text>
+    <rect x="10" y="66" width="55" height="13" rx="2" fill="#14532d" />
+    <text x="14" y="75" fill="#86efac" font-size="8" class="mono">PASSED</text>
+  </g>
+
+  <!-- STAGE 4: Docker Image -->
+  <g transform="translate(540, 20)">
+    <rect width="125" height="85" rx="6" fill="#0d1117" stroke="#2563eb" stroke-width="1" />
+    <rect width="125" height="20" rx="6" fill="#172554" />
+    <text x="10" y="14" fill="#60a5fa" font-size="9" font-weight="700" class="mono">STAGE 04</text>
+    
+    <text x="10" y="42" fill="#f8fafc" font-size="11" font-weight="600" class="sans">Docker Build</text>
+    <text x="10" y="58" fill="#94a3b8" font-size="9" class="mono">Push to Registry</text>
+    <rect x="10" y="66" width="60" height="13" rx="2" fill="#1e3a8a" />
+    <text x="14" y="75" fill="#93c5fd" font-size="8" class="mono">TAGGED</text>
+  </g>
+
+  <!-- STAGE 5: Kubernetes Deployment -->
+  <g transform="translate(710, 20)">
+    <rect width="150" height="85" rx="6" fill="#0d1117" stroke="#16a34a" stroke-width="1.2" />
+    <rect width="150" height="20" rx="6" fill="#052e16" />
+    <text x="10" y="14" fill="#4ade80" font-size="9" font-weight="700" class="mono">STAGE 05</text>
+    
+    <text x="10" y="42" fill="#f8fafc" font-size="11" font-weight="600" class="sans">K8s Deployment</text>
+    <text x="10" y="58" fill="#86efac" font-size="9" class="mono">Ingress · Replicas (x2)</text>
+    <rect x="10" y="66" width="68" height="13" rx="2" fill="#14532d" />
+    <text x="14" y="75" fill="#4ade80" font-size="8" font-weight="600" class="mono">DEPLOYED ●</text>
+  </g>
+</svg>

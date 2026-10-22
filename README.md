@@ -23,36 +23,89 @@ I am an engineer focused on the intersection of **Cloud-Native Infrastructure**,
 
 ## 01 — DevOps & Cloud Engineering
 
-I architect scalable, automated, and secure deployment pipelines that reduce cycle time and ensure high system availability. My focus is on container orchestration, Infrastructure as Code (IaC), zero-trust security gates, and multi-cloud continuous delivery.
+<div align="center">
 
-### 🛠️ Core Toolset & Infrastructure
-<p align="left">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
-  <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Kyverno-1B9AAA?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kyverno" />
-  <img src="https://img.shields.io/badge/Trivy-0052CC?style=for-the-badge&logo=securityscorecard&logoColor=white" alt="Trivy" />
-</p>
+![Cloud Infrastructure Topology](assets/cloud-infrastructure-hero.svg)
 
-### 🚀 Featured Project: Multi-Container CI/CD News Platform
-*An enterprise multi-tier, multi-container news and meteorological telemetry dashboard built on continuous integration and automated orchestration principles.*
+</div>
+
+I design and operate automated deployment systems, cloud-native container workloads, and declarative delivery pipelines with a focus on reproducibility, isolated container environments, and structured infrastructure topologies.
+
+### 🛠️ Infrastructure Toolset
+
+| Domain | Technologies | Architectural Responsibility |
+| :--- | :--- | :--- |
+| **Source Control** | <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" valign="middle" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" valign="middle" /> | Feature branch workflows, pull request automation, and webhook commit triggers |
+| **CI/CD** | <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" valign="middle" /> | Declarative pipeline orchestration, automated artifact packaging, and build staging |
+| **Containers & Orchestration** | <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" valign="middle" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" valign="middle" /> | Multi-stage image compilation, Pod replica controllers, and NodePort service networking |
+| **Cloud & IaC** | <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" valign="middle" /> <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" valign="middle" /> | Cloud infrastructure provisioning, VPC networking, and declarative state definitions |
+| **Security & Policy** | <img src="https://img.shields.io/badge/Trivy-0052CC?style=flat-square&logo=securityscorecard&logoColor=white" valign="middle" /> <img src="https://img.shields.io/badge/Kyverno-1B9AAA?style=flat-square&logo=kubernetes&logoColor=white" valign="middle" /> | Container vulnerability auditing, Kubernetes admission control, and policy enforcement |
+| **Operating System** | <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" valign="middle" /> | Shell automation, service configuration, and container host administration |
+
+### 🔄 Automated CI/CD Delivery Pipeline
+
+```text
+[ Git Push ] ──► [ Jenkins CI ] ──► [ Maven Build ] ──► [ Docker Image ] ──► [ K8s Deployment ]
+  main branch      Webhook trigger     mvn package        Registry push        2x Pod Replicas
+```
+
+<div align="center">
+
+![CI/CD Deployment Pipeline](assets/cicd-pipeline.svg)
+
+</div>
+
+- **Source Trigger**: Code committed to `main` branch fires a webhook trigger to the CI controller.
+- **Pipeline Execution**: Jenkins pipeline allocates an agent and stages the workspace repository.
+- **Artifact Compilation**: Automated application build and packaging via Maven (`mvn clean package`).
+- **Container Build**: Docker compiles the service layer, tags `bhanuteja110/cicd-news-backend:latest`, and pushes to the Docker registry with credentials.
+- **Cluster Deployment**: Workload is rolled out to Kubernetes with configured replica sets and active healthchecks.
+
+### 🚀 Featured Project: CI/CD News Platform
+
+*An enterprise multi-tier news and weather dashboard engineered to demonstrate continuous integration pipelines, containerized service coordination, and Kubernetes traffic management.*
 
 [![Repository](https://img.shields.io/badge/GitHub-cicd--news-181717?style=flat-square&logo=github)](https://github.com/Bhanutejanallamothu/cicd-news)
 [![Docker](https://img.shields.io/badge/Docker-Multi--Container-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-Manifests-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
+[![Jenkins](https://img.shields.io/badge/Jenkins-Pipeline-D24939?style=flat-square&logo=jenkins&logoColor=white)](https://github.com/Bhanutejanallamothu/cicd-news)
 
-- **Multi-Service Architecture**: Coordinates a Vite/React frontend, Spring Boot 3 enterprise backend, and containerized MySQL database on an isolated bridge network with automated volume persistence.
-- **Continuous Integration Pipeline**: Automated test execution, Maven artifact builds, and Docker container packaging with reproducible multi-stage builds.
-- **Live Stream Aggregation**: Concurrent asynchronous ingestion of real-time breaking news via NewsData.io and weather telemetry via OpenWeather API.
+#### Architecture & Deployment Flow
+```mermaid
+flowchart TD
+    subgraph IngressLayer["Traffic Routing & Ingress"]
+        Client(["Client Request"]) -->|"HTTP / Ingress"| Ingress["Kubernetes Ingress (cicd-ingress)"]
+        Ingress -->|"host: frontend.local"| FrontSvc["Frontend Service (NodePort: 30073)"]
+        Ingress -->|"host: backend.local"| BackSvc["Backend Service (NodePort: 30080)"]
+    end
 
-### ⚙️ Deployment Workflows & Cloud Architecture
-- **Zero-Trust CI/CD Automation**: Quality gates implementing Ruff and Hadolint static linting, Bandit SAST security scans, Pip-Audit vulnerability checks, and automated unit test verification.
-- **Kubernetes Manifest Orchestration**: Environment-segregated Kustomize deployments (`base`, `local`, `staging`, `production`) configured with Kyverno admission policies, Horizontal Pod Autoscaling (HPA), and Pod Disruption Budgets (PDB).
-- **Supply Chain Security**: Cosign keyless container signing using GitHub OIDC tokens, CycloneDX Software Bill of Materials (SBOM) generation, and weekly automated Dependabot audits.
+    subgraph ClusterLayer["Kubernetes Workloads & Pods"]
+        FrontSvc --> FrontPods["Frontend Deployment (2 Replicas)\n[React + Vite / Nginx :80]"]
+        BackSvc --> BackPods["Backend Deployment (2 Replicas)\n[Spring Boot 3 REST API :8080]"]
+        BackPods -->|"JDBC"| MySQLDB[("MySQL Database Container\n[tutordb :3306]")]
+    end
+
+    subgraph DataFeeds["External Feeds"]
+        FrontPods -.->|"Live Headlines"| NewsFeed["NewsData.io API"]
+        FrontPods -.->|"Weather Forecast"| WeatherFeed["OpenWeather API"]
+    end
+
+    classDef k8s fill:#0f172a,stroke:#38bdf8,stroke-width:1.5px,color:#f8fafc;
+    classDef svc fill:#1e293b,stroke:#22c55e,stroke-width:1.5px,color:#f8fafc;
+    classDef db fill:#1e293b,stroke:#f97316,stroke-width:1.5px,color:#f8fafc;
+    class FrontPods,BackPods k8s;
+    class FrontSvc,BackSvc,Ingress svc;
+    class MySQLDB db;
+```
+
+#### Verified Implementation Details
+- **Multi-Service Containerization**: Orchestrates a React/Vite client, Spring Boot 3 backend service, and MySQL database container connected via a Docker bridge network with persistent volume storage.
+- **Declarative Jenkins Pipeline**: Implements scripted stages in `Jenkinsfile` handling repository checkout, Maven build compilation, container image tagging, Docker Hub registry push, and target deployment execution.
+- **Kubernetes Workload Manifests**:
+  - `cicd-frontend-service`: Configured as a NodePort service (`nodePort: 30073`) managing 2 replica pods on port `80`.
+  - `cicd-backend-service`: Configured as a NodePort service (`nodePort: 30080`) routing traffic to 2 Spring Boot replica pods on port `8080`.
+  - `cicd-ingress`: Path-based Ingress controller rule routing `frontend.local` to frontend pods and `backend.local` to backend API endpoints.
+- **Health Check & Startup Coordination**: Configured with Hikari connection timeouts and container startup delay handling for smooth database initialization.
 
 ---
 
