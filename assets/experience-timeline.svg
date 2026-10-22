@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="expBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    @keyframes timelineFlow {
+      to { stroke-dashoffset: -20; }
+    }
+    .flow-line {
+      stroke-dasharray: 6 4;
+      animation: timelineFlow 2s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="880" height="160" rx="8" fill="url(#expBg)" stroke="#30363d" stroke-width="1" />
+
+  <!-- Header Subtitle -->
+  <text x="24" y="25" fill="#38bdf8" font-size="10.5" font-weight="700" class="mono">ENGINEERING CAREER TIMELINE</text>
+  <text x="856" y="25" text-anchor="end" fill="#8b949e" font-size="10" class="mono">2024 — 2026</text>
+  <line x1="24" y1="33" x2="856" y2="33" stroke="#30363d" stroke-width="1" />
+
+  <!-- Connecting Timeline Track -->
+  <line x1="150" y1="52" x2="730" y2="52" stroke="#21262d" stroke-width="2" />
+  <line x1="150" y1="52" x2="730" y2="52" stroke="#38bdf8" stroke-width="1.8" class="flow-line" opacity="0.7" />
+
+  <!-- Node 1: KL Radio -->
+  <g transform="translate(24, 46)">
+    <rect width="260" height="98" rx="6" fill="#0d1117" stroke="#38bdf8" stroke-width="1" />
+    <rect width="260" height="22" rx="6" fill="#0c4a6e" opacity="0.35" />
+    <circle cx="12" cy="11" r="4" fill="#38bdf8" />
+    <text x="22" y="15" fill="#38bdf8" font-size="9" font-weight="700" class="mono">KL RADIO · TECHNICAL LEAD</text>
+    <text x="250" y="15" text-anchor="end" fill="#7dd3fc" font-size="8.5" class="mono">Aug 2024 – Present</text>
+    <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">Technical Lead</text>
+    <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Live streaming architecture, technical</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">coordination & broadcast operations</text>
+    <rect x="12" y="82" width="52" height="13" rx="2" fill="#161b22" stroke="#38bdf8" stroke-width="0.5" />
+    <text x="38" y="91.5" text-anchor="middle" fill="#38bdf8" font-size="7.5" font-weight="600" class="mono">WebRTC</text>
+    <rect x="68" y="82" width="60" height="13" rx="2" fill="#161b22" stroke="#38bdf8" stroke-width="0.5" />
+    <text x="98" y="91.5" text-anchor="middle" fill="#38bdf8" font-size="7.5" font-weight="600" class="mono">Full-Stack</text>
+    <rect x="132" y="82" width="68" height="13" rx="2" fill="#161b22" stroke="#38bdf8" stroke-width="0.5" />
+    <text x="166" y="91.5" text-anchor="middle" fill="#38bdf8" font-size="7.5" font-weight="600" class="mono">Leadership</text>
+  </g>
+
+  <!-- Node 2: Swecha -->
+  <g transform="translate(310, 46)">
+    <rect width="260" height="98" rx="6" fill="#0d1117" stroke="#22c55e" stroke-width="1" />
+    <rect width="260" height="22" rx="6" fill="#052e16" opacity="0.45" />
+    <circle cx="12" cy="11" r="4" fill="#22c55e" />
+    <text x="22" y="15" fill="#4ade80" font-size="9" font-weight="700" class="mono">SWECHA · TECHNOLOGY INTERN</text>
+    <text x="250" y="15" text-anchor="end" fill="#86efac" font-size="8.5" class="mono">Jun 2025 – Jul 2025</text>
+    <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">Technology Intern</text>
+    <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Telugu NLP corpus data cleaning,</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">validation & open-source workflows</text>
+    <rect x="12" y="82" width="48" height="13" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="0.5" />
+    <text x="36" y="91.5" text-anchor="middle" fill="#4ade80" font-size="7.5" font-weight="600" class="mono">Python</text>
+    <rect x="64" y="82" width="58" height="13" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="0.5" />
+    <text x="93" y="91.5" text-anchor="middle" fill="#4ade80" font-size="7.5" font-weight="600" class="mono">NLP Data</text>
+    <rect x="126" y="82" width="76" height="13" rx="2" fill="#161b22" stroke="#22c55e" stroke-width="0.5" />
+    <text x="164" y="91.5" text-anchor="middle" fill="#4ade80" font-size="7.5" font-weight="600" class="mono">Open Source</text>
+  </g>
+
+  <!-- Node 3: AweTales Narratives -->
+  <g transform="translate(596, 46)">
+    <rect width="260" height="98" rx="6" fill="#0d1117" stroke="#f59e0b" stroke-width="1" />
+    <rect width="260" height="22" rx="6" fill="#451a03" opacity="0.45" />
+    <circle cx="12" cy="11" r="4" fill="#f59e0b" />
+    <text x="22" y="15" fill="#fbbf24" font-size="9" font-weight="700" class="mono">AWETALES · AI/ML INTERN</text>
+    <text x="250" y="15" text-anchor="end" fill="#fde68a" font-size="8.5" class="mono">Jun 2026 – Present</text>
+    <text x="12" y="42" fill="#f0f6fc" font-size="12" font-weight="600" class="sans">AI / ML Intern</text>
+    <text x="12" y="60" fill="#8b949e" font-size="9.5" class="sans">Audio preprocessing pipelines,</text>
+    <text x="12" y="74" fill="#8b949e" font-size="9.5" class="sans">FFmpeg automation & data validation</text>
+    <rect x="12" y="82" width="48" height="13" rx="2" fill="#161b22" stroke="#f59e0b" stroke-width="0.5" />
+    <text x="36" y="91.5" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-weight="600" class="mono">Python</text>
+    <rect x="64" y="82" width="50" height="13" rx="2" fill="#161b22" stroke="#f59e0b" stroke-width="0.5" />
+    <text x="89" y="91.5" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-weight="600" class="mono">FFmpeg</text>
+    <rect x="118" y="82" width="86" height="13" rx="2" fill="#161b22" stroke="#f59e0b" stroke-width="0.5" />
+    <text x="161" y="91.5" text-anchor="middle" fill="#fbbf24" font-size="7.5" font-weight="600" class="mono">Data Processing</text>
+  </g>
+</svg>

@@ -350,47 +350,108 @@ From autonomous agent reasoning workflows to deep neural network representations
 
 ---
 
-## 04 — Experience, Achievements & GitHub Activity
+## 04 — Experience & Recognition
+*Engineering experience · Technical leadership · Professional certifications · Activity*
 
-### 💼 Engineering Experience & Leadership
-
-```text
-2024 ───► KL Radio (Technical Lead)
-           ├─ Led 15-member engineering and production team
-           ├─ Architected full-stack live streaming infrastructure (99.9% uptime)
-           └─ Delivered 50+ live broadcasts for 500+ concurrent listeners
-2025 ───► Swecha (Technology Intern)
-           ├─ Improved Telugu NLP model accuracy by 10%
-           ├─ Boosted frontend load performance by 18% via bundle splitting
-           └─ Collaborated on large-scale open-source Telugu language datasets
-2025 ───► AICTE EduSkills (Software Developer Intern)
-           ├─ Designed scalable RESTful APIs and token-based auth workflows
-           └─ Optimized PostgreSQL queries and database indexing
-```
-
-### 🏆 Certifications & Recognitions
-- 📜 **Oracle AI Foundations Associate** — Oracle University (AI/ML Fundamentals, Deep Learning, Generative AI)
-- ⚡ **HackerRank SQL Certification** — Advanced Database Query Design, Joins, and Performance Tuning
-- 🛠️ **HackerRank C Certification** — Systems Programming & Memory Management
-- 🌐 **Cambridge Linguaskill** — International Professional Communication
-- 🎙️ **Core Technical Member, Radio Fiesta** — Spearheaded university broadcast network and live audio coordination
-
----
-
-### 📊 GitHub Activity & Statistics
+### 01 / Professional Experience
+*Internships and technical leadership roles across audio engineering, data pipelines, and full-stack systems*
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Bhanutejanallamothu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=48dbfb&icon_color=48dbfb&text_color=c9d1d9" height="175" alt="Bhanuteja's GitHub Stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bhanutejanallamothu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=48dbfb&text_color=c9d1d9" height="175" alt="Top Languages" />
+![Engineering Career Timeline](assets/experience-timeline.svg)
+
+</div>
+
+#### AI/ML Intern — AweTales Narratives
+*Jun 2026 – Present*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white" alt="FFmpeg" />
+  <img src="https://img.shields.io/badge/Data_Processing-150458?style=flat-square&logo=pandas&logoColor=white" alt="Data Processing" />
+</p>
+
+Focused on automated audio preprocessing pipelines, data validation, and batch media transformations for narrative content workflows.
+
+- **Audio Preprocessing Automation**: Developed Python automation scripts utilizing FFmpeg for high-throughput audio normalization, format conversion, and silence trimming.
+- **Batch Processing Workflows**: Implemented batch transformation routines to standardize diverse multi-track audio assets into consistent sampling rates and channels.
+- **Dataset Preparation & Validation**: Executed data cleaning and quality validation checks on tabular and acoustic metadata before downstream model ingestion.
+
+---
+
+#### Technology Intern — Swecha
+*Jun 2025 – Jul 2025*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/NLP_Data-2BAF74?style=flat-square&logo=google-cloud&logoColor=white" alt="NLP Data" />
+  <img src="https://img.shields.io/badge/Open_Source-181717?style=flat-square&logo=github&logoColor=white" alt="Open Source" />
+</p>
+
+Contributed to open-source Telugu language computing initiatives, focusing on linguistic data cleaning, validation routines, and corpus normalization.
+
+- **Telugu Corpus Preprocessing**: Cleaned, filtered, and validated large-scale Telugu text corpora for open-source regional language datasets.
+- **Data Processing Pipelines**: Built automated Python routines to parse raw text data, eliminate malformed character sequences, and structure tokens.
+- **Open-Source Collaboration**: Coordinated with developer teams in an open-source development workflow, managing version control and pull request reviews.
+
+---
+
+#### Technical Lead — KL Radio
+*Aug 2024 – Present*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC" />
+  <img src="https://img.shields.io/badge/Full_Stack-0052CC?style=flat-square&logo=react&logoColor=white" alt="Full Stack" />
+  <img src="https://img.shields.io/badge/Team_Leadership-238636?style=flat-square&logo=githubactions&logoColor=white" alt="Team Leadership" />
+</p>
+
+Directing technical coordination, platform architecture, and operational workflows for the campus live audio broadcasting portal.
+
+- **Live Streaming Platform Development**: Built and maintained the web application architecture supporting live campus audio streaming and scheduling.
+- **Technical Coordination**: Managed engineering tasks, coordinating development cycles across frontend interfaces, audio feeds, and team workflows.
+- **Broadcast Infrastructure**: Oversaw technical delivery pipelines, resolving operational audio routing issues and ensuring broadcast continuity.
+
+---
+
+### 02 / Achievements & Leadership
+*Competitive recognitions, hackathons, and technical leadership initiatives*
+
+- 🏆 **3rd Place — Vivitsu 2026**: Awarded 3rd place in the technical competition organized by Gokaraju Rangaraju Institute of Engineering and Technology (GRIET).
+- 🎙️ **Technical Lead — KL Radio**: Appointed to lead platform development, broadcast engineering coordination, and system operations for the campus radio organization.
+- 🤝 **Open-Source Contribution — Swecha**: Actively contributed to open-source regional language NLP datasets and collaborative developer community projects.
+
+---
+
+### 03 / Certifications
+*Verified cloud architecture, AI foundations, algorithmic, and agile development credentials*
+
+<p align="left">
+  <img src="https://img.shields.io/badge/AWS-Cloud_Practitioner-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS Certified Cloud Practitioner" />
+  <img src="https://img.shields.io/badge/AWS-AI_Practitioner-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS Certified AI Practitioner" />
+  <img src="https://img.shields.io/badge/NPTEL-Algorithms-0052CC?style=flat-square&logo=bookstack&logoColor=white" alt="NPTEL Algorithms" />
+  <img src="https://img.shields.io/badge/Scrum-Fundamentals_Certified-009688?style=flat-square&logo=scrumalliance&logoColor=white" alt="Scrum Fundamentals Certified" />
+</p>
+
+| Certification | Issuing Organization | Focus & Core Competencies |
+| :--- | :--- | :--- |
+| **AWS Certified Cloud Practitioner** | Amazon Web Services (AWS) | Cloud Architecture, Security Posture, Core Infrastructure & Billing Models |
+| **AWS Certified AI Practitioner** | Amazon Web Services (AWS) | Machine Learning Fundamentals, Generative AI & Foundation Model Workflows |
+| **Design and Analysis of Algorithms** | NPTEL (IIT / MoE) | Algorithm Complexity, Asymptotic Analysis, Graph Algorithms & Dynamic Programming |
+| **Scrum Fundamentals Certified (SFC™)** | SCRUMstudy | Agile Principles, Scrum Ceremonies, Sprint Planning & Team Delivery Frameworks |
+
+---
+
+### 04 / GitHub Activity & Statistics
+*Continuous integration activity, repository analytics, and commit consistency*
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Bhanutejanallamothu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9" height="175" alt="Bhanuteja's GitHub Profile Statistics" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bhanutejanallamothu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9" height="175" alt="Top Programming Languages" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanutejanallamothu&theme=tokyonight&hide_border=true&background=0d1117&ring=48dbfb&fire=ff7675&currStreakLabel=48dbfb" alt="GitHub Streak" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Bhanutejanallamothu&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=48dbfb&line=48dbfb&point=2ecc71" width="95%" alt="Contribution Graph" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanutejanallamothu&theme=tokyonight&hide_border=true&background=0d1117&ring=38bdf8&fire=f97316&currStreakLabel=38bdf8" alt="GitHub Contribution Streak" />
 
 </div>
 
